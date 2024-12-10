@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><p>EDIT PAGE</p>
+        <br><br>
+        <form action="" method="POST">
+          {% csrf_token %}
+          <label for="">NAME</label> <input type="text"  name="name" id="" value="{{data2.name}}"><br><br>
+          <label for="">PLACE</label> <input type="text"  name="place" id="" value="{{data2.place}}"><br><br>
+          <label for="">THING</label> <input type="text"  name="thing" id="" value="{{data2.thing}}"><br><br>
+          <label for="">NUMBER</label> <input type="text"  name="number" id="" value="{{data2.number}}"><br><br>
+          <button type="submit">UPDATE</button> <br><br>
+        </form>
+        
+    </center>
+</body>
+</html>

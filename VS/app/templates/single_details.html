@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        form{
+            border: 2px solid;
+            width: 50%;
+        }
+        div{
+            border: 2px solid;
+            width: 50%;
+        }
+    </style>
+
+    <center>
+        <h1>EDIT PAGE</h1>
+        <br><br>
+        <div>
+            <P>NAME: {{data1.name}}</P>
+            <p>PLACE: {{data1.place}}</p>
+            <p>THING: {{data1.thing}}</p>
+            <p>NUMBER: {{data1.number}}</p>
+            <a href="{% url 'edit' data1.id %}"><button>EDIT</button></a>
+            <br><br>
+        </div>
+
+        <!-- <p>{{data1.name}}</p>
+        {{data1.place}} -->
+    </center>
+    
+</body>
+</html>
